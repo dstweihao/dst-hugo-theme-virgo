@@ -129,7 +129,7 @@ body.cool {
 
 		.container-ctgtag {
 			.taxonomy {
-				.ctg, .categories .tag {
+				.ctg, .categories, .tag {
 					a {
 						@include bg-cool;
 					}
