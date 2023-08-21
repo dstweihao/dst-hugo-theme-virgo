@@ -1,5 +1,6 @@
 <div class="container-archive">
-    <div class="count">共有 {{ len .Pages }} 篇文章</div>
+    {{ $totalArticles := len .Site.RegularPages }}
+    <div class="count">共有 {{ $totalArticles }} 篇文章</div>
 
     <!-- 最近文章 -->
     <div class="recentf">
@@ -28,7 +29,6 @@
                 <a href="{{.Permalink}}"><img src="/imgs/icons/ctg.svg" width="16" /> {{ .Title }} <sup>{{len
                         .Pages}}</sup></a>
             </div>
-
             <div class="arc-post">
                 {{ range .Pages }}
                 <div class="arc-post-item">
