@@ -1,5 +1,11 @@
 <div class="container-ctgtag">
 	<div class="taxonomy">
+		<div class="categories">
+			<!-- {{ with .Params.tags }} <img src="/imgs/icons/tag.svg" width="16" /> {{ end }} -->
+			{{ range .Params.categories }}
+			<a href="/categories/{{ . | urlize }}">{{ . }}</a>
+			{{ end }}
+		</div>
 		<div class="tag">
 			<!-- {{ with .Params.tags }} <img src="/imgs/icons/tag.svg" width="16" /> {{ end }} -->
 			{{ range .Params.tags }}

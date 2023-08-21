@@ -4,7 +4,7 @@
 
     <!-- 最近文章 -->
     <div class="recentf">
-        {{ range first 8 .Site.RegularPages.ByLastmod.Reverse }}
+        {{ range first 10 .Site.RegularPages.ByLastmod.Reverse }}
         <div class="rec-post">
             <div class="rec-post-item">
                 <a href="{{.Permalink}}">{{ .Title }}</a>

@@ -7,7 +7,7 @@
 			margin-right: 4px;
 		}
 
-		.ctg, .tag {
+		.ctg, .categories .tag {
 			a {
 				font-size: .12rem;                
 				color: $gray-500;
@@ -18,7 +18,7 @@
 			}
 		}
 
-		.tag a {
+		.categories .tag a {
 			border-radius: 0 8px 0 6px;
 		}
 	}
