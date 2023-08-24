@@ -1,5 +1,9 @@
 
 
+> 古之立大事者，不惟有超世之才，亦必有坚忍不拔之志。
+
+
+
 基于 [hugo-theme-virgo](https://github.com/loveminimal/hugo-theme-virgo) 主题进行调整，有很多功能已经完善了，在此基础上，逐步新增一些小功能。
 
 - [x] 去掉网站各页面导航图标和其功能
@@ -23,4 +27,5 @@
 
 ---
 
-欢迎体验 ： ） 
+[欢迎体验 ： ）](https://dstweihao.cn/)
+
