@@ -25,7 +25,8 @@
     <div class="categories">
         {{ range .Site.Pages.ByLength }}
         {{ if and (eq .Type "categories") (ne .Title "Categories") (ne .Title "Secrets")}}
-        <div class="arc-item">
+        <!-- 如果分类的文章数大于8时，将对齐右侧，否则会补上间距-->
+        <div class="arc-item" style="margin: {{ if ge (len .Pages) 8 }}12px 0px 6px 0px{{ else }}12px 12px 6px 0px{{ end }};">
             <div class="arc-desc">
                 <a href="{{.Permalink}}"><img src="/imgs/icons/ctg.svg" width="16" /> {{ .Title }} <sup>{{len
                         .Pages}}</sup></a>
@@ -46,7 +47,8 @@
     <div class="tags">
         {{ range .Site.Pages.ByLength }}
         {{ if and (eq .Type "tags") (ne .Title "Tags") (ne .Title "Secrets")}}
-        <div class="arc-item">
+        <!-- 如果标签的文章数大于8时，将对齐右侧，否则会补上间距-->
+        <div class="arc-item" style="margin: {{ if ge (len .Pages) 8 }}12px 0px 6px 0px{{ else }}12px 12px 6px 0px{{ end }};">
             <div class="arc-desc">
                 <a href="{{.Permalink}}"><img src="/imgs/icons/tag.svg" width="16" /> {{ .Title }} <sup>{{len
                         .Pages}}</sup></a>
