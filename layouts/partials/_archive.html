@@ -3,6 +3,7 @@
     <div class="count">共有 {{ $totalArticles }} 篇文章</div>
 
     <!-- 最近文章 -->
+    <div class="count">∇ 最近文章</div>
     <div class="recentf">
         {{ range first 10 .Site.RegularPages.ByLastmod.Reverse }}
         <div class="rec-post">
@@ -19,7 +20,7 @@
     </div>
 
     <!-- 分类 -->
-    <!-- <div class="desc">分类: </div> -->
+    <div class="count">∇ 分类</div>
     <!-- 📂 📜 🔖-->
     <div class="categories">
         {{ range .Site.Pages.ByLength }}
@@ -41,7 +42,7 @@
         {{ end }}
     </div>
     <!-- 标签 -->
-    <!-- <div class="desc">标签: </div> -->
+    <div class="count">∇ 标签</div>
     <div class="tags">
         {{ range .Site.Pages.ByLength }}
         {{ if and (eq .Type "tags") (ne .Title "Tags") (ne .Title "Secrets")}}
