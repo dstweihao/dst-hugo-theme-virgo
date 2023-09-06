@@ -29,6 +29,7 @@
             .title {
                 white-space: nowrap;
                 overflow: hidden;
+
                 &:hover {
                     overflow: auto;
                 }
@@ -53,6 +54,7 @@
 
         #content {
             padding: 0;
+
             .container-main {
                 overflow: hidden;
 
@@ -66,10 +68,11 @@
 
             .container-nav {
                 padding: 0 4px;
-                
+
                 .content-nav {
                     .nav ul {
                         justify-content: space-between;
+
                         li {
                             width: 50%;
                         }
@@ -89,9 +92,11 @@
                 .list {
                     .recentf {
                         margin: 12px;
+
                     }
 
-                    .item, .item-term {
+                    .item,
+                    .item-term {
                         margin: 12px;
                         background: $post-item-bg-color;
 
@@ -125,7 +130,13 @@
             }
 
             .container-archive {
-                .categories, .tags {
+                .recentf {
+                    padding-left: 12px;
+                    padding-right: 12px;
+                }
+
+                .categories,
+                .tags {
                     .arc-item {
                         width: 96%;
                         margin: 12px 12px 6px 12px;
