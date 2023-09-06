@@ -3,6 +3,11 @@
         padding: 16px 8px;
     }
 
+    .title {
+        padding: 16px 8px;
+        background: aliceblue;
+    }
+
     .desc {
         font-size: .20rem;
     }
@@ -11,7 +16,7 @@
         display: flex;
         flex-wrap: wrap;
         box-sizing: border-box;
-
+        margin: 12px 0px 12px 0px;
         .rec-post .rec-post-item {
             a {
                 font-size: .14rem;
@@ -25,7 +30,8 @@
 
     }
 
-    .categories, .tags {
+    .categories,
+    .tags {
         display: flex;
         flex-wrap: wrap;
         // margin-top: 32px;
@@ -33,7 +39,7 @@
         .arc-item {
             padding: 4px;
             background: $gray-100;
-            margin: 12px 12px 6px 0px;
+            margin: 12px 0px 6px 0px;
             // 排列方式调整，去掉等宽排队
             // width: 32.3%;
             box-sizing: border-box;
@@ -41,6 +47,7 @@
 
             .arc-desc {
                 padding: 8px 0;
+
                 a {
                     font-size: .16rem;
 
