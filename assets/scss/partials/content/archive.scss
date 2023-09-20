@@ -5,6 +5,7 @@
 
     .title {
         margin-top: 6px;
+        margin-right: 24px;
         padding: 16px 8px;
         background: aliceblue;
     }
@@ -17,7 +18,7 @@
         display: flex;
         flex-wrap: wrap;
         box-sizing: border-box;
-        margin: 12px 0px 12px 0px;
+        margin: 12px 0px 4px 0px;
         .rec-post .rec-post-item {
             a {
                 font-size: .14rem;
@@ -40,9 +41,9 @@
         .arc-item {
             padding: 4px;
             background: $gray-100;
-            // margin: 12px 0px 6px 0px;
+            margin: 8px 8px 0px 0px;
             // 排列方式调整，去掉等宽排队
-            // width: 32.3%;
+            width: 32.3%;
             box-sizing: border-box;
             // backdrop-filter: blur(10px);
 
